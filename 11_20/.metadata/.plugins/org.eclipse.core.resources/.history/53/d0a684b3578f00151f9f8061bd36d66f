@@ -1,0 +1,15 @@
+
+public class StudentTest {
+	
+	public static void main(String[] args)
+	{
+	
+		Student Account1 = new Student("AA",86.7);
+		Student Account2 = new Student("BB",62.5);
+	
+		System.out.printf("%s'S grade is %s%n",Account1.getName(),Account1.getLevel());
+		System.out.printf("%s'S grade is %s%n",Account2.getName(),Account2.getLevel());
+	}
+	
+
+}

@@ -1,0 +1,58 @@
+
+public class Student {
+
+	private String name;
+	private double average; 
+	
+	public Student(String name,double average)
+	{
+		setName(name);
+		setAverage(average);
+	}
+	
+	public void setName(String name)
+	{
+		this.name=name;
+	}
+	
+	public String getName()
+	{
+		return name;
+	}
+	
+	public void setAverage(double average)
+	{
+		if(average>0 && average<=100)	this.average=average;
+	}
+	
+	public double getAverage()
+	{
+		return average;
+	}
+	
+	public String getLevel()
+	{
+		String level =	"";
+		
+		switch((int)(average/10))
+		{
+		case 10 : 
+			level = "A";
+			break;
+		case 9 : 
+			level = "B";
+			break;
+		case 8 : 
+			level = "C";
+			break;
+		case 7 : 
+			level = "D";
+			break;
+		default : 
+			level = "F";				
+		}
+		
+		return level;
+	}
+	
+}
